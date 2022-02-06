@@ -1,3 +1,65 @@
-body{
-    background: #000;
+@import "libs/reset.scss";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+body {
+    background: hsl(226, 43%, 10%);
+    font-size: 18px;
+    overflow: hidden;
+}
+.grid{
+    max-width: 1300px;
+    width: 80%;
+    margin: 200px auto;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 270px);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 20px;
+    justify-content: center;
+
+    .section{
+        width: 275px;
+        height: 270px;
+        background: rgb(187, 163, 163);
+        border-radius: 15px;
+        display: flex;
+        align-items: flex-end;
+
+        .inner-section{
+            width: 100%;
+            height: 80%;
+            background: hsl(235, 46%, 20%);
+            border-radius: 15px;
+        }
+    }
+    .profil{
+        grid-area: 1 / 1 / 3 / 2;
+        background: hsl(235, 46%, 20%);
+        height: auto;
+        align-items: flex-start;
+
+        .inner-section{
+            height: 65%;
+            background: hsl(246, 80%, 60%);
+        }
+    }
+    .work{
+        background: hsl(15, 100%, 70%);
+    }
+    .play{
+        background: hsl(195, 74%, 62%);
+    }
+    .study{
+        background: hsl(348, 100%, 68%);
+    }
+    .exercise{
+        background: hsl(145, 58%, 55%);
+    }
+    .social{
+        background: hsl(264, 64%, 52%);
+    }
+    .self-care{
+        background: hsl(43, 84%, 65%);
+    }
 }

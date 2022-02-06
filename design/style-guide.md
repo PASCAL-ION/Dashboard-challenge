@@ -9,6 +9,13 @@ The designs were created to the following widths:
 
 ## Colors
 
+### Neutral
+
+- Very dark blue: hsl(226, 43%, 10%) X
+- Dark blue: hsl(235, 46%, 20%)
+- Desaturated blue: hsl(235, 45%, 61%)
+- Pale Blue: hsl(236, 100%, 87%)
+--------------------------------------------------------------
 ### Primary
 
 - Blue: hsl(246, 80%, 60%)
@@ -19,13 +26,6 @@ The designs were created to the following widths:
 - Lime green (exercise): hsl(145, 58%, 55%)
 - Violet (social): hsl(264, 64%, 52%)
 - Soft orange (self care): hsl(43, 84%, 65%)
-
-### Neutral
-
-- Very dark blue: hsl(226, 43%, 10%)
-- Dark blue: hsl(235, 46%, 20%)
-- Desaturated blue: hsl(235, 45%, 61%)
-- Pale Blue: hsl(236, 100%, 87%)
 
 ## Typography
 
