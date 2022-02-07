@@ -5,6 +5,7 @@ body {
     background: hsl(226, 43%, 10%);
     font-size: 18px;
     overflow: hidden;
+    font-family: 'Rubik', sans-serif;
 }
 .grid{
     max-width: 1300px;
@@ -31,6 +32,33 @@ body {
             height: 80%;
             background: hsl(235, 46%, 20%);
             border-radius: 15px;
+            color: rgb(255, 255, 255);
+            .inner-section-title{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 30px 30px 0px 30px;
+            }
+            .inner-section-time{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                height: 50%;
+                margin-top: 20px;
+                margin-left: 30px;
+                span{
+                    font-size: 4rem;
+                    font-weight: 300;
+                    
+                }
+                p{
+                    font-size: 1rem;
+                    font-weight: 300;
+                    letter-spacing: 1px;
+                    opacity: 0.9;
+                    color: hsl(236, 100%, 87%);
+                }
+            }
         }
     }
     .profil{
