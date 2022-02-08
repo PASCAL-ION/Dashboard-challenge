@@ -7,6 +7,9 @@ body {
     overflow: hidden;
     font-family: 'Rubik', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 .grid{
     max-width: 1300px;
     width: 80%;
@@ -26,13 +29,23 @@ body {
         border-radius: 15px;
         display: flex;
         align-items: flex-end;
+        position: relative;
+        overflow: hidden;
+
+        .iconsvg{
+            position: absolute;
+            top: -8px;
+            right: 15px;
+            z-index: 0;
+        }
 
         .inner-section{
             width: 100%;
-            height: 80%;
+            height: 83%;
             background: hsl(235, 46%, 20%);
             border-radius: 15px;
             color: rgb(255, 255, 255);
+            z-index: 2;
             .inner-section-title{
                 display: flex;
                 align-items: center;
@@ -65,11 +78,55 @@ body {
         grid-area: 1 / 1 / 3 / 2;
         background: hsl(235, 46%, 20%);
         height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
         align-items: flex-start;
 
+        .period{
+            margin: 15px 0 25px 35px;
+        }
+
+        p{
+            color: hsl(236, 100%, 87%);
+            opacity: 0.9;
+            line-height: 2.8rem;
+            letter-spacing: 1px;
+            font-weight: 300;
+        }
+
         .inner-section{
-            height: 65%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 68%;
             background: hsl(246, 80%, 60%);
+            display: flex;
+            flex-direction: column;
+
+            img{
+                justify-self: flex-start;
+                align-items: flex-start;
+                width: 90px;
+                border: 3px solid white;
+                border-radius: 50%;
+                margin: 35px 0 0 30px;
+            }
+            
+            .jeremy-info{
+                margin: 35px 0 0 35px;
+
+                h1{
+                    font-size: 2.8rem;
+                    font-weight: 300;
+
+                }
+                p{
+                    line-height: 1.6rem;
+                    font-size: 0.97rem;
+                }
+            }
         }
     }
     .work{

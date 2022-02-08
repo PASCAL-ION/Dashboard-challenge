@@ -51,6 +51,10 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .grid {
   max-width: 1300px;
   width: 80%;
@@ -70,13 +74,22 @@ body {
   border-radius: 15px;
   display: flex;
   align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+}
+.grid .section .iconsvg {
+  position: absolute;
+  top: -8px;
+  right: 15px;
+  z-index: 0;
 }
 .grid .section .inner-section {
   width: 100%;
-  height: 80%;
+  height: 83%;
   background: #1c1f4a;
   border-radius: 15px;
   color: white;
+  z-index: 2;
 }
 .grid .section .inner-section .inner-section-title {
   display: flex;
@@ -107,11 +120,49 @@ body {
   grid-area: 1/1/3/2;
   background: #1c1f4a;
   height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
   align-items: flex-start;
 }
+.grid .profil .period {
+  margin: 15px 0 25px 35px;
+}
+.grid .profil p {
+  color: #bdc1ff;
+  opacity: 0.9;
+  line-height: 2.8rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
 .grid .profil .inner-section {
-  height: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 68%;
   background: #5847eb;
+  display: flex;
+  flex-direction: column;
+}
+.grid .profil .inner-section img {
+  justify-self: flex-start;
+  align-items: flex-start;
+  width: 90px;
+  border: 3px solid white;
+  border-radius: 50%;
+  margin: 35px 0 0 30px;
+}
+.grid .profil .inner-section .jeremy-info {
+  margin: 35px 0 0 35px;
+}
+.grid .profil .inner-section .jeremy-info h1 {
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+.grid .profil .inner-section .jeremy-info p {
+  line-height: 1.6rem;
+  font-size: 0.97rem;
 }
 .grid .work {
   background: #ff8c66;
