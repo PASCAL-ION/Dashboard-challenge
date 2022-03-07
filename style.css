@@ -44,6 +44,18 @@ td, th {
   padding: 0;
 }
 
+.red {
+  background: red;
+}
+
+.active a {
+  color: white;
+}
+
+a {
+  color: rgba(189, 193, 255, 0.822);
+}
+
 body {
   background: #0f1424;
   font-size: 18px;
@@ -91,6 +103,10 @@ a {
   color: white;
   z-index: 2;
 }
+.grid .section .inner-section:hover {
+  background: #5b5e86;
+  cursor: pointer;
+}
 .grid .section .inner-section .inner-section-title {
   display: flex;
   align-items: center;
@@ -129,12 +145,14 @@ a {
 .grid .profil .period {
   margin: 15px 0 25px 35px;
 }
-.grid .profil p {
-  color: #bdc1ff;
+.grid .profil a {
   opacity: 0.9;
   line-height: 2.8rem;
   letter-spacing: 1px;
   font-weight: 300;
+}
+.grid .profil p:hover {
+  color: aliceblue;
 }
 .grid .profil .inner-section {
   position: absolute;
